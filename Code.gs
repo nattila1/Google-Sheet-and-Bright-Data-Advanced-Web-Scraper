@@ -7,6 +7,7 @@
 // Replace these with your actual values
 const SHEET_NAME = 'Sheet1';
 const BRIGHT_DATA_API_KEY = 'YOUR_BRIGHT_DATA_API_KEY'; // <-- Add your Bright Data API key here
+const BRIGHT_DATA_ZONE_ID = 'YOUR_BRIGHT_DATA_ZONE_ID'; // <-- Add your Bright Data Zone ID here
 
 // Column configuration
 const URLS_COLUMN_ID = 1; // Column containing URLs (A = 1)
@@ -103,7 +104,7 @@ function fetchHtmlWithBrightData(url) {
 
   // Construct the payload for the Bright Data API
   const payload = {
-    zone: "web_unlocker1",
+    zone: "BRIGHT_DATA_ZONE_ID",
     url: url,
     format: "raw", // We want the raw HTML content
     method: "GET"
