@@ -104,7 +104,7 @@ function fetchHtmlWithBrightData(url) {
 
   // Construct the payload for the Bright Data API
   const payload = {
-    zone: "BRIGHT_DATA_ZONE_ID",
+    zone: BRIGHT_DATA_ZONE_ID,
     url: url,
     format: "raw", // We want the raw HTML content
     method: "GET"
