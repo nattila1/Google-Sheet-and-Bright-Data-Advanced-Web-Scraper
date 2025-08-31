@@ -2,6 +2,8 @@
 
 A powerful Google Apps Script that uses the Bright Data API to automate sophisticated web scraping directly within Google Sheets. Extract multiple data points, bypass common anti-scraping measures, and populate your spreadsheet with structured data.
 
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/FS6zD4k_1W0/0.jpg)](https://www.youtube.com/watch?v=FS6zD4k_1W0)
+
 ## Features
 
 * **Advanced Scraping Power:** Integrates with the Bright Data API to handle websites with CAPTCHAs, IP blocking, and other anti-scraping technologies.
@@ -29,7 +31,7 @@ The workflow leverages a professional scraping service for robustness and reliab
 
 ## Setup
 
-For a detailed walkthrough, please refer to the full guide:
+For a detailed walkthrough, please refer to the full guide: https://bestflow.io/blog/posts/how-to-scrape-protected-sites-like-amazon-directly-from-google-sheets-with-bright-data/
 
 ➡️ **How to Scrape Protected Sites Like Amazon Directly from Google Sheets with Bright Data**
 
@@ -60,8 +62,10 @@ Go to your account settings or the API section to find your API key.
 
 ```javascript
 // --- CONFIGURATION ---
+// Replace these with your actual values
 const SHEET_NAME = 'Sheet1';
-const BRIGHT_DATA_API_KEY = 'bp_xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx'; // <-- PASTE YOUR KEY HERE
+const BRIGHT_DATA_API_KEY = 'YOUR_BRIGHT_DATA_API_KEY'; // <-- Add your Bright Data API key here
+const BRIGHT_DATA_ZONE_ID = 'YOUR_BRIGHT_DATA_ZONE_ID'; // <-- Add your Bright Data Zone ID here
 ```
 \*\*Warning:\*\* Because your API key is stored directly in the code, do not share this script file or make it public, as it will expose your private key.
 ### 4. Add the Cheerio Library ⚙️
